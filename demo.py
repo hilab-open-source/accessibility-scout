@@ -1,5 +1,6 @@
 import os
 from pathlib import Path
+import argparse
 
 from dotenv import load_dotenv
 import numpy as np
@@ -22,12 +23,43 @@ global EVALUATOR
 # DEFAULT_LOAD_DIR = Path("hidden_data/formative/experiment/testing_baselines")
 # DEFAULT_SAVE_DIR = Path("hidden_data/formative/experiment/testing_results")
 # DEFAULT_USER_MODEL_JSON_PATH = Path("hidden_data/formative/experiment/user_model.json")
+global DEFAULT_LOAD_DIR
+global DEFAULT_SAVE_DIR
+global DEFAULT_USER_MODEL_JSON_PATH
 
-DEFAULT_LOAD_DIR = Path("hidden_data/final/P11/training_baselines")
-DEFAULT_SAVE_DIR = Path("hidden_data/final/P11/training_results")
-DEFAULT_USER_MODEL_JSON_PATH = Path("hidden_data/final/P11/user_model.json")
+DEFAULT_USER_MODEL_JSON_PATH = Path("./user_model.json")
+DEFAULT_LOAD_DIR = Path("./in")
+DEFAULT_SAVE_DIR = Path("./out")
 
-DEFAULT_SAVE_DIR.mkdir(exist_ok=True)
+def get_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(
+        prog="Accessibility Scout Demo",
+        description="Launches the tested user interface for Accessibility Scout",
+    )
+
+    parser.add_argument(
+        "--baseline-dir",
+        type=str,
+        help="Directory of configured baselines. Each folder should be an individual baseline to process",
+        required=True,
+    )
+
+    parser.add_argument(
+        "--save-dir",
+        type=str,
+        help="Directory to save all the final predictions",
+        required=True,
+    )
+
+    parser.add_argument(
+        "--user-model-path",
+        type=str,
+        help="Path to a JSON of the user model",
+        required=False,
+        default="",
+    )
+
+    return parser
 
 def gen_annotatedimage_segs():
     global EVALUATOR
@@ -383,4 +415,13 @@ with gr.Blocks(fill_width=True) as demo:
     )
 
 if __name__ == "__main__":
+    parser = get_parser()
+    args = vars(parser.parse_args())
+
+    DEFAULT_LOAD_DIR = Path(args["baseline_dir"])
+    DEFAULT_SAVE_DIR = Path(args["save_dir"])
+    DEFAULT_USER_MODEL_JSON_PATH = Path(args["user_model_path"])
+
+    DEFAULT_SAVE_DIR.mkdir(exist_ok=True)
+
     demo.launch()
