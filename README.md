@@ -34,7 +34,7 @@ All code was developed in **Python 3.10.8**. We give instructions on setting up 
 
 Using virtualenv:
 ```bash
-cd
+cd accessibility-scout
 python -m venv .venv
 . .venv/bin/activate
 
