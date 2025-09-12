@@ -1,0 +1,10 @@
+python-dotenv
+typing
+openai
+pillow
+jsonschema
+matplotlib
+sentence-transformers
+opencv-python
+pycocotools
+gradio==5.3.0

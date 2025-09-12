@@ -1,0 +1,1 @@
+Use this information to update this JSON. Only update the entries that have been changed or add entries that were not in the JSON previously. Remove an entry if there is a concrete and specific user given reason to do so. For any new elements added, stay as general as possible. Focus on the general motions and movements over specific scenarios.
