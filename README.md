@@ -1,6 +1,6 @@
 # Accessibility Scout: Personalized Accessibility Scans of Built Environments
 
-### [[Project Page]]() [[DOI]]() [[arXiv]]()
+### [[Project Page]]() [[DOI NOT AVAILABLE YET]]() [[arXiv]](https://www.arxiv.org/abs/2507.23190)
 
 ![Teaser Image](./assets/teaser.png)
 
@@ -26,12 +26,12 @@ We provide all relevant code within this repo.
 You can clone the repository with
 
 ```
-git clone
+git clone https://github.com/whuang37/accessibility-scout.git
 ```
 
 All code was developed in **Python 3.10.8**. We give instructions on setting up dependencies below. We recommend using a virtual environment like [```uv```](https://docs.astral.sh/uv/) or ```virtualenv``` to install.
 
-Using virtual env:
+Using virtualenv:
 ```bash
 cd
 python -m venv .venv
@@ -67,4 +67,4 @@ bash scripts/download_ckpt.sh
 We use OpenAI for all LLM calls. In order to connect your OpenAI account, [create an API key](https://platform.openai.com/docs/quickstart/create-and-export-an-api-key) and enter the key into ```.env``` as seen in [```.env.example](./.env.example)
 
 # Citing
-If extending or using our work, please cite our corresponding paper found in the [DOI](). The BibTex is as follows.
+If extending or using our work, please cite our corresponding paper.
