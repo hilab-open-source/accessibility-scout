@@ -105,9 +105,4 @@ If extending or using our work, please cite our corresponding paper. The BibTex 
   archiveprefix = {arXiv},
   copyright = {All rights reserved}
 }
-
 ```
-<<<<<<< HEAD
->>>>>>> 1dcd507 (updated demo to work with inputted folders)
-=======
->>>>>>> 1dcd507 (updated demo to work with inputted folders)
