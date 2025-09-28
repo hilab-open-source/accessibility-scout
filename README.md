@@ -1,6 +1,6 @@
 # Accessibility Scout: Personalized Accessibility Scans of Built Environments
 
-### [[Project Page]]() [[DOI NOT AVAILABLE YET]]() [[arXiv]](https://www.arxiv.org/abs/2507.23190)
+### [[Project Page]]() [[DOI]](https://dl.acm.org/doi/10.1145/3746059.3747624) [[arXiv]](https://www.arxiv.org/abs/2507.23190)
 
 ![Teaser Image](./assets/teaser.png)
 
@@ -92,17 +92,19 @@ View your user model on the bottom left of the screen. Check all predicted acces
 If extending or using our work, please cite our corresponding paper. The BibTex is as follows.
 
 ```
-@misc{huangAccessibilityScoutPersonalized2025,
-  title = {Accessibility {{Scout}}: {{Personalized Accessibility Scans}} of {{Built Environments}}},
-  shorttitle = {Accessibility {{Scout}}},
-  author = {Huang, William and Su, Xia and Froehlich, Jon E. and Zhang, Yang},
-  year = {2025},
-  month = jul,
-  eprint = {2507.23190},
-  primaryclass = {cs},
-  doi = {10.1145/3746059.3747624},
-  urldate = {2025-09-12},
-  archiveprefix = {arXiv},
-  copyright = {All rights reserved}
+@inproceedings{HuangAccessibilityScout2025,
+    author = {Huang, William and Su, Xia and Froehlich, Jon E. and Zhang, Yang},
+    title = {Accessibility Scout: Personalized Accessibility Scans of Built Environments},
+    year = {2025},
+    isbn = {9798400720376},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/3746059.3747624},
+    doi = {10.1145/3746059.3747624},
+    booktitle = {Proceedings of the 38th Annual ACM Symposium on User Interface Software and Technology},
+    articleno = {183},
+    numpages = {18},
+    keywords = {Accessibility; Large Language Model; Accessibility Assessment; Personalization; Computer Vision},
+    series = {UIST '25}
 }
 ```
