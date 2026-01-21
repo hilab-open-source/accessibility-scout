@@ -1,6 +1,6 @@
 # Accessibility Scout: Personalized Accessibility Scans of Built Environments
 
-### [[Project Page]]() [[DOI]](https://dl.acm.org/doi/10.1145/3746059.3747624) [[arXiv]](https://www.arxiv.org/abs/2507.23190)
+### [[Project Page]](https://hilab-open-source.github.io/accessibility-scout/) [[DOI]](https://dl.acm.org/doi/10.1145/3746059.3747624) [[arXiv]](https://www.arxiv.org/abs/2507.23190)
 
 ![Teaser Image](./assets/teaser.png)
 
